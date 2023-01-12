@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* This is tag selector */
+        p {
+            color: rgb(158, 158, 222);
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border: 10px solid black;
+        }
+
+        /* This is class selector */
+        .data {
+            background-color: rgb(62, 101, 241);
+            color: rgb(180, 141, 216);
+        }
+
+        .small {
+            font-size: small;
+            color: rgb(153, 238, 238);
+        }
+
+        .large {
+            font-size: large;
+            color: rgb(178, 230, 161);
+        }
+
+        /* This is id selector */
+        #firstButton {
+            /* color: rgb(243, 120, 141); */
+        }
+
+        #para {
+            color: rgb(220, 173, 103);
+            font-size: large;
+            background-color: bisque;
+        }
+
+        /* This is pseudo selector */
+        button:hover {
+            background-color: yellow;
+        }
+
+        a:hover {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is my first paragraph</p>
+    <table>
+        <tr>
+            <Td>Name</Td>
+            <td>Roll No.</td>
+        </tr>
+        <tr class="data">
+            <td>Sparsh</td>
+            <td>1383</td>
+        </tr>
+        <tr class="data">
+            <td>Sweta</td>
+            <td>1421</td>
+        </tr>
+        <tr class="data">
+            <td>Tanmay</td>
+            <td>1437</td>
+        </tr>
+    </table>
+
+    <h1 class="small">This is heading 1</h1>
+    <h2 class="small">This is heading 2</h2>
+    <h3 class="small">This is heading 3</h3>
+    <h4 class="large">This is heading 4</h4>
+    <h5 class="large">This is heading 5</h5>
+    <h6 class="large">This is heading 6</h6>
+
+    <button id="firstButton">Submit</button>
+
+    <p id="para">This is a para to check id selector</p>
+
+    <a href="https://www.facebook.com">Go to Facebook</a>
+
+</body>
+
+</html>
