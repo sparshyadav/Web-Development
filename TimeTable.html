@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        #heading {
+            text-align: center;
+        }
+
+        .la {
+            background-color: rgb(247, 160, 174);
+            text-align: center;
+        }
+
+        .coa {
+            background-color: grey;
+            text-align: center;
+        }
+
+        .psc {
+            background-color: rgb(239, 164, 195);
+            text-align: center;
+        }
+
+        .cn {
+            background-color: rgb(46, 247, 120);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">CSE-4 -G4</h1>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><!--Monday-->
+                <td class="days">Mo</td>
+                <td colspan="2" class="la">LA</td>
+                <td></td>
+                <td></td>
+                <td class="coa">COA</td>
+                <td colspan="3" class="psc">PSC</td>
+                <td class="cn">CN</td>
+                <td></td>
+            </tr>
+
+            <tr><!--Tuesday-->
+                <td class="days">Tu</td>
+                <td></td>
+                <td></td>
+                <td colspan="3" class="psc">PSC</td>
+                <td class="cn">CN</td>
+                <td></td>
+                <td></td>
+                <td colspan="2" class="la">LA</td>
+            </tr>
+
+            <tr><!--Wednesday-->
+                <td class="days">We</td>
+                <td colspan="2" class="la">LA</td>
+                <td colspan="2" class="cn">CN Lab</td>
+                <td></td>
+                <td colspan="3" class="psc">PSC</td>
+                <td class="coa">COA</td>
+                <td></td>
+            </tr>
+
+            <tr><!--Thursday-->
+                <td class="days">Th</td>
+                <td></td>
+                <td></td>
+                <td colspan="3" class="psc">PSC</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="2" class="la">LA</td>
+            </tr>
+
+            <tr><!--Friday-->
+                <td class="days">Fr</td>
+                <td colspan="2" class="cn">CN Lab</td>
+                <td colspan="2" class="la">LA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="coa">COA</td>
+                <td class="cn">CN</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
