@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #8BC6EC;
+            background: linear-gradient(138deg, #8BC6EC 0%, #9599E2 100%);
+        }
+
+        .card {
+            width: 300px;
+            height: 600px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card img {
+            height: 50%;
+            width: 85%;
+            margin-top: 25px;
+            border-radius: 10px;
+        }
+
+        .title {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 10px;
+        }
+
+        .director {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 10px;
+        }
+
+        .bio {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="OpenheimerPoster.jpeg" alt="Oppenheimer Poster">
+            <h1 class="title">OPPENHEIMER</h1>
+            <h2 class="director">Christopher Nolan</h2>
+            <p class="bio">The story of American scientist J. Robert Oppenheimer and his role in the development of the
+                atomic bomb.</p>
+        </div>
+        <div class="card">
+            <img src="Mission Impossible Poster.jpg" alt="Mission Impossible Poster">
+            <h2 class="title">Mission: Impossible – Dead Reckoning Part One</h2>
+            <h2 class="director">Christopher McQuaire</h2>
+            <p class="bio">Ethan Hunt and his IMF team must track down a dangerous weapon before it falls into the wrong
+                hands.</p>
+        </div>
+        <div class="card">
+            <img src="Barbie Poster.webp" alt="Barbie Poster">
+            <h1 class="title">Barbie</h1>
+            <h2 class="director">Greta Gerwig</h2>
+            <p class="bio">Barbie suffers a crisis that leads her to question her world and her existence.</p>
+        </div>
+        <div class="card">
+            <img src="SpiderMan Poster.jpg" alt="Spiderman Poster">
+            <h2 class="title">Spider-Man: Across the Spider-Verse</h2>
+            <h3 class="director">
+                Joaquim Dos, SantosKemp Powers, Justin K. Thompson</h2>
+            <p class="bio">Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People
+                charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles
+                must redefine what it means to be a hero.</p>
+        </div>
+    </div>
+</body>
+
+</html>

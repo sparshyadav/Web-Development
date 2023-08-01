@@ -1,0 +1,16 @@
+p{
+    display: inline;
+}
+li{
+    display: inline;
+    padding: 20px;
+}
+ul{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(186, 237, 237);
+}
+li:hover{
+    color: violet;
+    cursor: pointer;
+}

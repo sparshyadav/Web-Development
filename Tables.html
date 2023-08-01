@@ -1,59 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        table,
-        td,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-    </style>
 </head>
-
 <body>
-    <p>STUDENT DATA</p>
-    <table>
+    <table border="1">
         <thead>
-            <tr>
-                <td>Name</td>
-                <td>CGPA</td>
-                <td>Age</td>
-            </tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Gender</th>
+            <th>Age</th>
         </thead>
         <tbody>
             <tr>
-                <td>Sparsh</td>
-                <td>9.5</td>
-                <td>20</td>
+                <td>1383</td>
+                <td colspan="3">Sparsh Yadav</td>
+                <!-- <td>Male</td>
+                <td>21</td> -->
             </tr>
             <tr>
-                <td>Sweta</td>
-                <td>19</td>
-                <td>9.7</td>
+                <td>1421</td>
+                <td>Sweta Shreya</td>
+                <td>Female</td>
+                <td rowspan="3">20</td>
             </tr>
             <tr>
-                <td>Tanmay</td>
-                <td>9.45</td>
-                <td>20</td>
+                <td>1621</td>
+                <td>Aditya Kanswal</td>
+                <td>Male</td>
+                <!-- <td>21</td> -->
             </tr>
             <tr>
-                <td>Sujal</td>
-                <td>9.8</td>
-                <td>19</td>
-            </tr>
-            <tr>
-                <td>Vania</td>
-                <td>19 </td>
-                <td>9.7</td>
+                <td>1982</td>
+                <td>Ayush Som</td>
+                <td>Male</td>
+                <!-- <td>20</td> -->
             </tr>
         </tbody>
     </table>
 </body>
-
 </html>

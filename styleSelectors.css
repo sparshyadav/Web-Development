@@ -1,0 +1,22 @@
+body{
+    font-size: 20px;
+}
+#first{
+    color: rgb(233, 43, 43);
+}
+#second{
+    color: rgb(65, 117, 239);
+}
+#third{
+    color: rgb(89, 232, 78);
+}
+.heading{
+    background-color: lavender;
+    color:rgb(241, 19, 93)
+}
+.para{
+    font-family: monospace;
+}
+#mainHeading{
+    border: 5px solix black;
+}
