@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <h1>Rock Paper Scissor</h1>
+    <button onclick="
+        const computerMove=pickCompMove();
+        console.log(computerMove);
+        let result='';
+        if(computerMove==='Paper'){
+            result='You Lose';
+        }
+        else if(computerMove==='Scissor'){
+            result='You Win';
+        }
+        else{
+            result='Its a Tie';
+        }
+        alert('You Picked Rock, Computer picked '+`${computerMove}`+'. '+`${result}`+',');
+    ">Rock</button>
+
+    <button onclick="
+        const computerMove=pickCompMove();
+        console.log(computerMove);
+        let result='';
+        if(computerMove==='Scissor'){
+            result='You Lose';
+        }
+        else if(computerMove==='Rock'){
+            result='You Win';
+        }
+        else{
+            result='Its a Tie';
+        }
+        alert('You Picked Paper, Computer picked '+`${computerMove}`+'. '+`${result}`+',');
+    ">Paper</button>
+
+    <button onclick="
+        const computerMove=pickCompMove();
+        console.log(computerMove);
+        let result='';
+        if(computerMove==='Rock'){
+            result='You Lose';
+        }
+        else if(computerMove==='Paper'){
+        result='You Win';
+        }
+        else{
+            result='Its a Tie';
+        }
+        alert('You Picked Scissor, Computer picked '+`${computerMove}`+'. '+`${result}`+',');
+    ">Scissor</button>
+    <script>
+        let computerMove = '';
+        function pickCompMove() {
+            const randomNum = Math.random();
+
+            if (randomNum <= 0.34) {
+                computerMove = 'Rock';
+            }
+            else if (randomNum > 0.35 && randomNum <= 0.66) {
+                computerMove = 'Paper';
+            }
+            else {
+                computerMove = 'Scissor';
+            }
+        }
+    </script>
+</body>
+
+</html>

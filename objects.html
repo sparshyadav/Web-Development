@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let obj={
+            " ": 10,
+            ' ': 20
+        }
+
+        console.log(obj);
+        console.log(obj[' ']);
+        console.log(obj[" "]);
+
+        let arr=[1, 2, 3];
+        for(const key in arr){
+            console.log('index: ', key);
+            console.log(arr[key]);
+        }
+
+        let anotherobj={
+            key1: 10,
+            key2: 20
+        }
+
+        for(let key in anotherobj){
+            console.log('key is: '+key);
+            console.log(anotherobj[key]);
+        }
+
+        // let obj={
+        //     key: "value",
+        //     key2: "value2"
+        // }
+        // console.log(obj);
+        
+        // let arr=[1, 2, 3];
+        // console.log(arr);
+
+        // let details={
+        //     "first": "Sparsh",
+        //     "last": "Yadav"
+        // }
+        // console.log(details.first+' '+details.last);
+
+        // details.first="Sweta";
+        // details.last="Shreya";
+
+        // console.log(details.first+' '+details.last);
+
+        // delete details.first;
+        // console.log(details.first+' '+details.last);
+
+        // details.address="Bikaner";
+        // console.log(details.first+' '+details.last+" lives in "+details.address);
+    </script>
+</body>
+</html>
