@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata&family=Kanit:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container {
+    background: #8A2387;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper img{
+    height: 125px;
+    border: solid 2px white;
+    border-radius: 50%;
+}
+
+.name{
+    margin-top: 10px;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.work{
+    margin-top: 0;
+}
+
+.box {
+    height: 500px;
+    width: 350px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.upper {
+    height: 30%;
+    background-color: #6F61C0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.socials img {
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button {
+    border: none;
+    background-color: #EA1179;
+    color: white;
+    border-radius: 25px;
+    height: 35px;
+    width: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.engagement {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.like .share .comment {
+    display: flex;
+    flex-direction: row;
+}
+
