@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata&family=Kanit:wght@200&family=Poppins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3f2fd;
+}
+.card{
+    width: 380px;
+    /* background-color: #2D3436; */
+    background: linear-gradient(178.6deg, rgb(20, 36, 50) 11.8%, rgb(124, 143, 161) 83.8%);
+    height: 220px;
+    border-radius: 15px;
+    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.75), 25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+.logo{
+    /* height: 20%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.logo img{
+    width: 48px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.logo h4{
+    /* margin-left: 20px; */
+    color: white;
+}
+.mastercard{
+    display: flex;
+    align-items: center;
+}
+.details{
+    margin-top: 25px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    width: 60%;
+    margin-left: 25px;
+    /* justify-content: space-between; */
+}
+.name{
+    margin-top: 20px;
+}
+.name h3{
+    color: white;
+}
+.number h5{
+    color: white;
+}
+.number h3{
+    color: white;
+}
+.lowerPart{
+    display: flex;
+}
+.validity{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 25px;
+}
+.thr h5{
+    color: white;
+}
+.thr h3{
+    color: white;
+}
