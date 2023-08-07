@@ -7,57 +7,27 @@
 </head>
 <body>
     <script>
+        const product={
+            name: 'Sparsh',
+            rollNo: 1383
+        };
 
-        let obj={
-            " ": 10,
-            ' ': 20
-        }
+        console.log(product);
+        console.log(product.name);
+        console.log(product.rollNo);
 
-        console.log(obj);
-        console.log(obj[' ']);
-        console.log(obj[" "]);
+        product.name='Sparsh Yadav';
+        console.log(product.name);
 
-        let arr=[1, 2, 3];
-        for(const key in arr){
-            console.log('index: ', key);
-            console.log(arr[key]);
-        }
+        product.batch='CSE';
+        console.log(product);
 
-        let anotherobj={
-            key1: 10,
-            key2: 20
-        }
+        delete product.batch;
+        console.log(product);
 
-        for(let key in anotherobj){
-            console.log('key is: '+key);
-            console.log(anotherobj[key]);
-        }
+        console.log(typeof(product));
 
-        // let obj={
-        //     key: "value",
-        //     key2: "value2"
-        // }
-        // console.log(obj);
         
-        // let arr=[1, 2, 3];
-        // console.log(arr);
-
-        // let details={
-        //     "first": "Sparsh",
-        //     "last": "Yadav"
-        // }
-        // console.log(details.first+' '+details.last);
-
-        // details.first="Sweta";
-        // details.last="Shreya";
-
-        // console.log(details.first+' '+details.last);
-
-        // delete details.first;
-        // console.log(details.first+' '+details.last);
-
-        // details.address="Bikaner";
-        // console.log(details.first+' '+details.last+" lives in "+details.address);
     </script>
 </body>
 </html>
