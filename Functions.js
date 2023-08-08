@@ -10,7 +10,7 @@
 // }
 // console.log(sub(-10, -20));
 
-// var sub=function(a, b){
+// var sub=function(a, b){ // This is known as function expression, function expression is of two types, named and unnamed, and the function without any name is known as anomynomous function.
 //     return a*b;
 // }
 // console.log(sub(10, 5));
