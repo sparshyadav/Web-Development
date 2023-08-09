@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Hello</button>
+    <button class="jsClass">Hi</button>
+    <script>
+        //DOM combines HTML and JavaScript together
+
+        console.log(document.querySelector('button')); // It will get the first 'button' form the HTML code
+        console.log(document.querySelector('button').innerHTML); // It will get the first thing inside the button tag in the HTML code
+        console.log(document.querySelector('.jsClass')); // It gives you the tag from the HTML Document with the jsClass using the "." operator.
+        console.log(document.querySelector('.jsClass'.innerHTML));
+
+        // console.log(document.title); // Displays the title of the HTML page
+        // document.title='Changed'; // Changes the title of the HTML page
+        // console.log(document.title);
+        // console.log(document.body); // Displays the content of the body in the console
+        // console.log(typeof document.body);
+        // console.log(document.body.innerHTML); // It Displays the entire HTML code
+        // document.body.innerHTML='Changed'; // It changes the content on the webpage to "Changed"
+        // document.body.innerHTML='<button>Good Job!</button>';
+    </script>
+</body>
+</html>
