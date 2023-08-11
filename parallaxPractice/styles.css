@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -7,7 +8,7 @@
 #wrapper{
     height:100vh;
     overflow-x:hidden;
-    /* overflow-y:auto; */
+    overflow-y:auto;
     perspective:10px;
 }
 
@@ -18,7 +19,7 @@
     align-items:center;
     height:100%;
     transform-style: preserve-3d;
-    z-index: -1;
+    
 }
 
 .background{
