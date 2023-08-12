@@ -1,0 +1,25 @@
+.container{
+    height: 800px;
+    border: 2px solid black;
+    background-color: rgb(217, 29, 29);
+    display: grid;
+    grid-template-rows: 30px 150px 400px 30px;
+    grid-template-columns: 400px;
+    grid-template-areas: "hd" "sb" "cxt" "ft";
+}
+.box{
+    border: 1px solid black;
+    background-color: rgb(245, 120, 120);
+}
+#header{
+    grid-area: hd;
+}
+#sidebar{
+    grid-area: ft;
+}
+#footer{
+    grid-area: sb;
+}
+#content{
+    grid-area: cxt;
+}
