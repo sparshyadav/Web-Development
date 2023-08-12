@@ -1,0 +1,13 @@
+.container{
+    border: 1px solid rgb(150, 26, 26);
+    background-color: rgb(238, 67, 67);
+    height: 600px;
+    width: 600px;
+}
+.box{
+    border: 2px solid green;
+    background-color: aqua;
+    --dark-red:#981a2c;
+    /* Variable is created using two hypens */
+    color: var(--dark-red);
+}
