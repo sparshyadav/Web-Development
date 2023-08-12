@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(128, 251, 148);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 65% 15%;
+    grid-template-areas: "hd hd" "side main" "ft ft";
+    grid-gap: 5px;
+}
+.box{
+    border: 1px solid green;
+}
+#header{
+    grid-area: hd;
+}
+#sidebar{
+    grid-area: side;
+}
+#content{
+    grid-area: main;
+}
+#footer{
+    grid-area: ft;
+}
