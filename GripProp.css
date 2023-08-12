@@ -1,0 +1,43 @@
+.container{
+    border: 1px solid burlywood;
+    background-color: antiquewhite;
+    height: 800px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+    /* Justify Content */
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+
+    /* Align Items */
+    /* align-items: start;
+    align-items: end;
+    align-items: baseline;
+    align-items: stretch; */
+
+    /* Align Content */
+    /* align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly; */
+}
+.box{ 
+    border: 1px solid red;
+    background-color: aqua;
+}
+#box1{
+    /* Justify Self */
+    /* justify-self: start;
+    justify-self: end;
+    justify-self: center; */
+
+    /* Align Self */
+    /* align-self: start;
+    align-self: end;
+    align-self: center; */
+}
