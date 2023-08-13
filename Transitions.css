@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: green;
+    border: 3px solid red;
+    display: flex;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid orange;
+    background-color: aqua;
+    transition: background-color 1s ease-in 1s;
+    
+}
+.box:hover{
+    background-color: rgb(73, 73, 233);
+    margin: 0;
+    padding: 0;
+}
