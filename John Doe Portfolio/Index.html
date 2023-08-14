@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo-container">
+                    <img src="Media/NavLogo.jpg" alt="" class="logo">
+                    <div class="logo-text">ohn Doe</div>
+                </div>
+                <div class="nav-items">
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contactme">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-section">
+            <div class="faded-text">John Doe</div>
+            <div class="hero-section-left">
+                <div class="hero-section-heading">Hi!! John Doe</div>
+                <div class="hero-section-heading hero-section-sub-heading">I am a <span class="role"></span></div>
+                <div class="hero-section-description">I'm a Software Developer and here is my Portfolio Website. Here
+                    you'll learn about my journey as a Software Developer.</div>
+                <div class="btn-pink" id="btn">Hire Me</div>
+            </div>
+            <div class="hero-section-right">
+                <div class="absolute icons icon-dots">
+                    <img src="Media/dots.png" alt="">
+                </div>
+                <div class="absolute icons icon-cube">
+                    <img src="Media/cube.png" alt="">
+                </div>
+                <div class="absolute icons icon-circle">
+                    <img src="Media/circle.png" alt="">
+                </div>
+                <div class="absolute icons icon-zigzag">
+                    <img src="Media/zigzags.png" alt="">
+                </div>
+                <div class="absolute icons icon-plus">
+                    <img src="Media/plus.png" alt="">
+                </div>
+                <div class="user-image">
+                    <img src="Media/UserImage.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdm.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role", { strings: ["Full Stack Developer", "Web Developer", "UI-UX Designer", "Backend Developer", "Coder"], loop: true, typeSpeed: 100, backSpeed: 80, backDelay: 1000, });
+    </script>
+
+</html>
