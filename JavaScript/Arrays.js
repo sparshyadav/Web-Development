@@ -28,3 +28,17 @@ let jump=function(){ //This is function assignment anonymus as it does not have 
 jump();
 let jumpp=jump;
 jumpp();
+
+function sum(a, b){
+    let total=0;
+    for(let value of arguments){
+        total+=value;
+    }
+    return total;
+}
+console.log(sum(1,2,3,4,5));
+
+function interest(p, r=15, t=10){ //here r, and t are default parameters, if while calling this function, we did not give any parameter for r, and t, then the values provided will be given.
+    return p*r*t/100;
+}
+console.log(interest(1000, 25, 5));
