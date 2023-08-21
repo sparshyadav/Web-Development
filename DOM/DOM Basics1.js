@@ -15,3 +15,6 @@ console.log(var5);
 
 let var6=document.querySelector('.para');
 console.log(var6);
+
+let var7=document.querySelectorAll('.para');
+console.log(var7);
