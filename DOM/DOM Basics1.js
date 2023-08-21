@@ -1,3 +1,4 @@
+// All these things are used to acces all the html content
 let var1=document.getElementById('header');
 console.log(var1);
 
@@ -18,3 +19,5 @@ console.log(var6);
 
 let var7=document.querySelectorAll('.para');
 console.log(var7);
+
+// All these things are used to update existing html content
