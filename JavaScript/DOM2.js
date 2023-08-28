@@ -15,7 +15,9 @@ let textPara=document.createTextNode('This is a new Para');
 newPara.appendChild(textPara);
 content.appendChild(newPara);
 
-
+let newText=document.createElement('h3');
+newText.textContent='This is a new Heading';
+button.insertAdjacentElement('beforeBegin', newText);
 
 
 
