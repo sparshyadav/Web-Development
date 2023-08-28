@@ -23,3 +23,27 @@ let ul=document.querySelector("ul");
 let str=ul.innerHTML;
 console.log(str);
 str+="<li>AI</li>";
+
+function clickEvent(){
+    console.log("click!!");
+}
+
+function addElement(value){
+    let li=document.createElement("li");
+    console.log(li);
+    li.classList.add("listItem");
+    li.innerText=`${value}`;
+    ul.append(li);
+};
+
+let mother=document.querySelector(".mother");
+grandFather.addEventListener("click" , function(){
+    console.log("father");
+    eval.stopPropagation();
+});
+mother.addEventListener("click", function(){
+    console.log("mother");
+})
+
+
+
