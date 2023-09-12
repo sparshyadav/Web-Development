@@ -28,3 +28,17 @@ const addTwo=(num1, num2)=>{
     return num1+num2;
 }
 console.log(addTwo(3,5));
+
+
+// ++++++++++ Immediately Invoked Function Expressions (IIFE) ++++++++++
+(function chai(){  // This is named IIFE as it has a name-> chai
+    console.log("DB Connected");
+})();
+
+(()=>{
+    console.log("DB Connected Two");
+})();
+
+((name)=>{
+    console.log(`DB Connected by ${name}`);
+})('Sparsh');
