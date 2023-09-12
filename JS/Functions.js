@@ -16,3 +16,8 @@ handleObject({
     username: "Yadav",
     price: 999
 });
+
+const addOne=function(num){ //This method of declaring a function using a variable is known as function expression.
+    return ++num;
+}
+console.log(addOne(5));
