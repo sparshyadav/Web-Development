@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Clock</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .clock{
+            border: 2px solid black;
+            height: 50px;
+            width: 75%;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="container">
+            <h1>Your Local Time</h1>
+            <div class="clock"></div>
+        </div>
+    </div>
 </body>
 </html>
