@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Instagram Like Feature</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: salmon;
+        }
+
+        .container {
+            height: 500px;
+            width: 350px;
+            position: relative;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        i {
+            color: white;
+            font-size: 75px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            opacity: 0;
+            transition: ease .3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="Shreya Image 2.jpg" alt="">
+        <i class="ri-heart-fill"></i>
+    </div>
+</body>
+<script>
+    let container = document.querySelector(".container");
+    let image = document.querySelector("img");
+    let love = document.querySelector(".ri-heart-fill")
+
+    image.addEventListener("dblclick", function (ev) {
+        love.style.opacity = 1;
+        love.style.transform = "translate(-50%, -50%) scale(1)";
+
+        setTimeout(() => {
+            love.style.opacity = 0;
+            love.style.transform = "translate(-50%, -50%) scale(1)";
+        }, 800);
+    })
+</script>
+
+</html>
