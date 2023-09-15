@@ -42,4 +42,21 @@
         </div>
     </div>
 </body>
+<script>
+    const bulb=document.querySelector(".bulb");
+    const btn=document.querySelector("button");
+    let flag=0;
+    btn.addEventListener('click', function (e){
+        if(flag==0){
+            bulb.style.backgroundColor="yellow";
+            btn.innerHTML='OFF';
+            flag=1;
+        }
+        else{
+            bulb.style.backgroundColor="transparent";
+            btn.innerHTML='ON';
+            flag=0;
+        }
+    })
+</script>
 </html>
