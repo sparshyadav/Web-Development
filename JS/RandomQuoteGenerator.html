@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <style>
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            background-color: #063766;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .container{
+            background-color: #8EE3AF;
+            height: 500px;
+            width: 800px;
+            border: 10px solid #E5EDDA;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="quote"></p>
+        <p class="author"></p>
+    </div>
+    <button>Generate Quote</button>
+</body>
+<script>
+    let arrQ=["The purpose of our lives is to be happy.", 
+    "Life is what happens when you're busy making other plans.", 
+    "Get busy living or get busy dying.", 
+    "Many of life’s failures are people who did not realize how close they were to success when they gave up."
+    ]
+
+    let arrA=['— Dalai Lama', '— John Lennon', '— Stephen King', '— Mae West']
+
+    const quote=document.querySelector(".quote");
+    const author=document.querySelector(".author");
+    const btn=document.querySelector("button");
+
+    let idx=0;
+    btn.addEventListener('click', ()=>{
+        if(idx==arrQ.length){
+            idx=0;
+        }
+        quote.innerHTML=arrQ[idx];
+        author.innerHTML=arrA[idx];
+        idx++;
+    })
+</script>
+</html>
