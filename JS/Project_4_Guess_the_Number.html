@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .wrapper{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 50%;
+            gap: 25px;
+            /* border: 1px solid black; */
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        p{
+            margin: 10px;
+        }
+        h1{
+            margin: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Number Guessing Game</h1>
+            <p>Try and guess a random number between 1 and 100. You have 10 attempts to guess the right number.</p>
+            <form action="">
+                <label for="guessField">Guess The Number</label>
+                <input type="text" name="guessField" id="guessField">
+                <input type="submit" name="" id="submit" value="Submit">
+            </form>
+            <p class="result"></p>
+            <p>Previous Guess:<span class="guesses"></span></p>
+            <p>Guesses Remaining: <span class="lastResult">10</span></p>
+        </div>
+    </div>
+</body>
+<script>
+    const randomNumber=parseInt(Math.random()*100+1);
+
+    const submit=document.querySelector('#submit');
+    const userInput=document.querySelector('#guessField');
+    const guessSlot=document.querySelector('.guesses');
+    const remaining=document.querySelector('.lastResult');
+    const result=document.querySelector(".result");
+
+    function validateGuess(guess){
+        if(isNaN(guess)){
+            result.innerHTML="Please Enter A Valid Number";
+        }
+        else if(guess>100 || guess<1){
+            result.innerHTML="Please Enter A Number within the Defined Range";
+        }
+        else if(guess==randomNumber){
+            result.innerHTML=`Your Guess is Correct: ${guess}`;
+        }
+    }
+
+    submit.addEventListener('click', function(e){
+        e.preventDefault();
+        validateGuess(userInput.value);
+    });
+</script>
+</html>
