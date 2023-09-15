@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .input{
+            padding: 5px;
+        }
+        button{
+            transform: translateX(100%);
+            margin-top: 10px;
+            font-size: 20px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Calculate Your Tip Amount</h1>
+            <form action="">
+                <div class="input">
+                    <label for="amount">Bill Amount:</label>
+                <input type="text" name="amount" id="amount">
+                </div>
+                <div class="input">
+                    <label for="tip-percent">Tip Percent</label>
+                <input type="text" name="tip-percent" id="tip-percent">
+                </div>
+                <button>Calculate</button>
+            </form>
+            <h2 class="result"></h2>
+        </div>
+    </div>
+</body>
+<script>
+    const amount=document.querySelector('#amount');
+    const percent=document.querySelector('#tip-percent');
+    const result = document.querySelector('.result');
+
+    const calculate=()=>{
+        const tipPercent=parseFloat(percent.value);
+        const billAmount=parseFloat(amount.value);
+
+        if(isNaN(billAmount) || isNaN(tipPercent)){
+            return 'Not a valid number';
+        }
+
+        let tip=((billAmount*tipPercent)/100).toFixed(1);
+        return tip;
+    }
+
+    const btn=document.querySelector("button");
+    btn.addEventListener('click', function(){
+        const total=calculate();
+        result.innerHTML=`Your Tip Amount is ${total}`;
+    })
+</script>
+</html>
