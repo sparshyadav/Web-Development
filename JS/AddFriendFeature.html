@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Friend Feature</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(105, 218, 229);
+        }
+        .container{
+            /* border: 1px solid black; */
+            height: 60%;
+            width: 30%;
+            border-radius: 15px;
+            background-color: white;
+            gap: 25px;
+        }
+        .image{
+            height: 40%;
+            width: 90%;
+            margin: 15px;
+            margin-left: 15px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        .status{
+            /* margin: 25px 27%;*/
+            font-size: 50px; 
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        button{
+            margin: 25px 25%;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="image"><img src="Shreya Image.jpg" alt=""></div>
+            <div class="status">Friend</div>
+            <div class="btn"><button>Add Friend</button></div>
+        </div>
+    </div>
+</body>
+<script>
+    let status=document.querySelector('.status');
+    let btn=document.querySelector("button");
+    let flag=0
+
+    btn.addEventListener('click', function(ev){
+        if(flag==0){
+            status.innerHTML="Stranger";
+            status.style.color="red";
+            btn.innerHTML="Add Friend";
+            flag=1;
+        }
+        else{
+            status.innerHTML="friend";
+            status.style.color="green";
+            btn.innerHTML="Remove Friend";
+            flag=0;
+        }
+    })
+</script>
+</html>
