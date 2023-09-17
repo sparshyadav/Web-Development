@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            font-family: 'montserrat';
+        }
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .input{
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+        }
+        input{
+            height: 35px;
+            width: 75px;
+            /* border-radius: 5px; */
+        }
+        button{
+            /* border-radius: 5px; */
+            height: 35px;
+            width: 75px;
+            background-color: rgb(67, 108, 228);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Guess The Number</h1>
+        <h2></h2>
+        <div class="input"><input type="text"><button>Check</button></div>
+        <p>You have <span class="chances">10</span> Chances</p>
+    </div>
+</body>
+<script>
+    const btn=document.querySelector("button");
+    const inputValue=document.querySelector("input");
+    const chance=document.querySelector(".chances");
+    const result=document.querySelector("h2");
+
+
+    const random=Math.floor(Math.random()*100+1);
+
+    let left=10;
+    btn.addEventListener('click', ()=>{
+        let userInput=parseInt(inputValue.value);
+        if(left>=1){
+            if(userInput>random){
+                result.innerHTML="Your Guess is Higher";
+            }
+            else if(userInput<random){
+                result.innerHTML="Your Guess is Lower";
+            }
+            else{
+                result.innerHTML=`Congratulations! You Won the Game`;
+                btn.disabled=true;
+            }
+            left--;
+            chance.innerHTML=left;
+        }
+        else{
+            result.innerHTML='Sorry, You are Out of Chances';
+            btn.disabled=true;
+        }
+    })
+</script>
+</html>
