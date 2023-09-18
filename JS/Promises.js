@@ -42,32 +42,56 @@
 
 
 // Pizza
-var promise1=new Promise((resolve, reject)=>{
-    return resolve("Pizza Ka Base Banao");
+// var promise1=new Promise((resolve, reject)=>{
+//     return resolve("Pizza Ka Base Banao");
+// })
+
+// promise2=promise1.then(function(data){
+//     console.log(data);
+//     return new Promise((resolve, reject)=>{
+//         return resolve("Pizza pr Sauce Lagao");
+//     })
+// })
+
+// promise3=promise2.then(function(data){
+//     console.log(data);
+//     return new Promise((resolve, reject)=>{
+//         return resolve("Toppings Lagao");
+//     })
+// })
+
+// promise4=promise3.then(function(data){
+//     console.log(data);
+//     return new Promise((resolve, reject)=>{
+//         return resolve("Bake in Oven");
+//     })
+// })
+
+// promise4.then(function(data){
+//     console.log(data);
+//     console.log("Pizza Taiyaar");
+// })
+
+const promise=new Promise((resolve, reject)=>{
+    setTimeout(function(){
+        let error=false;
+        if(!error){
+            resolve({username: "JavaScript", password: "12345"});
+        }
+        else{
+            reject("ERROR: An Error Occured");
+        }
+    }, 1000)
 })
 
-promise2=promise1.then(function(data){
-    console.log(data);
-    return new Promise((resolve, reject)=>{
-        return resolve("Pizza pr Sauce Lagao");
-    })
-})
+async function promiseConsume(){
+    try{
+        const response=await promise
+        console.log(response);
+    }
+    catch{
+        console.log("Error");
+    }
+}
 
-promise3=promise2.then(function(data){
-    console.log(data);
-    return new Promise((resolve, reject)=>{
-        return resolve("Toppings Lagao");
-    })
-})
-
-promise4=promise3.then(function(data){
-    console.log(data);
-    return new Promise((resolve, reject)=>{
-        return resolve("Bake in Oven");
-    })
-})
-
-promise4.then(function(data){
-    console.log(data);
-    console.log("Pizza Taiyaar");
-})
+promiseConsume();
