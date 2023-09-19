@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .count {
+            font-size: 75px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .decrease,
+        .reset,
+        .increase {
+            font-size: 15px;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="count">0</div>
+        <div class="buttons">
+            <button class="decrease">Decrease</button>
+            <button class="reset">Reset</button>
+            <button class="increase">Increase</button>
+        </div>
+    </div>
+</body>
+<script>
+    let counter = 0;
+    const decrease = document.querySelector('.decrease');
+    const increase = document.querySelector('.increase');
+    const reset = document.querySelector('.reset');
+    const count = document.querySelector('.count');
+
+    decrease.addEventListener('click', () => {
+        count.innerText = --counter;
+    })
+
+    increase.addEventListener('click', () => {
+        count.innerText = ++counter;
+    })
+
+    reset.addEventListener('click', () => {
+        count.innerHTML = 0;
+    })
+</script>
+
+</html>
