@@ -23,3 +23,19 @@ function createProduct(pId, n, c, q, p){
     <div class="Price">${p}</div>`
     container.append(div);
 }
+
+container.addEventListener("click", function(ev){
+    console.log(ev.target);
+    let className=ev.target.className;
+    if(className=="delete"){
+        let deleteQuantity=prompt("Enter the quantity you want to delete: ");
+        let pId=ev.target.previousElementSibling.previousElementSibling.console.log(pId);
+        console.log(deleteQuantity);
+        // productData.forEach((product.idx)=>{
+        //     if(product.productId==pId){
+        //         productData[idx].quantity-=deleteQuantity;
+        //     }
+        // })
+        localStorage.setItem("products", JSON.stringify(productData));
+    }
+})
