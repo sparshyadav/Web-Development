@@ -15,7 +15,7 @@ num.then(
     function(data){
         console.log(data);
     },
-    function(data){
+    function(data){ 
         console.log(data);
     },
 )
