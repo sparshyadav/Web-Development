@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="people">
+            <div class="name">Name</div>
+            <div class="height">Height</div>
+            <div class="gender">gender</div>
+        </div>
+    </div>
+</body>
+<script>
+    let url = 'https://swapi.dev/api/people/1/'
+    async function people() {
+        let response = await fetch(url);
+        let data = response.json();
+        console.log(data);
+        showData(data);
+    }
+    people();
+
+    let container=document.querySelector('.container');
+    function showData(people){
+        container.innerHTML='';
+        let div=document.createElement("div");
+        div.innerHTML=`<div class="people">
+            <div class="name">${people.name}</div>
+            <div class="height">Height</div>
+            <div class="gender">gender</div>
+        </div>`;
+        container.append(div);
+    }
+</script>
+
+</html>
