@@ -7,13 +7,17 @@
 </head>
 <body>
     <div class="root">
-
+        <h2 class="heading">Hello React</h2>
     </div>
+
 </body>
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 <script>
-    let heading=React.createElement('h1', {}, "Hello World");
+    let heading=React.createElement('h1', {
+        id:"heading",
+        name: "Sparsh"
+    }, "Hello World");
     let root=ReactDOM.createRoot(document.querySelector(".root"));
     root.render(heading);
 </script>
